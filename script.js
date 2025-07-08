@@ -34,8 +34,8 @@ generateButton.addEventListener("click", async function showColors(){
     render(data);
 });
 
-// const label = document.getElementById("list-label");
-const favoriteButton = document.getElementById("favorite");
-favoriteButton.addEventListener
+// red 
+// pink 
+// yellow
+// orange 
 
-// let favorites = []
