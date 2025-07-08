@@ -19,13 +19,20 @@ async function fetchColors() {
 }
 // console.log(Error);
 
-showColors()
+// showColors()
 function render(data){
 const paletteElem = document.getElementById("palette");
 paletteElem.style.backgroundColor = data.hex.value
 }
 
-async function showColors(){
+const generateButton = document.getElementById("generate-btn");
+
+generateButton.addEventListener("click", async function showColors(){
     const data = await fetchColors();
     render(data);
-}
+});
+
+// generateButton.addEventListener("click", function() {
+
+//  ;
+// });
