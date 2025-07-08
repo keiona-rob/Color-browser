@@ -22,7 +22,9 @@ async function fetchColors() {
 // showColors()
 function render(data){
 const paletteElem = document.getElementById("palette");
-paletteElem.style.backgroundColor = data.hex.value
+const numValue = document.getElementById("hex-id")
+paletteElem.style.backgroundColor = data.hex.value;
+numValue.innerHTML = data.hex.value
 }
 
 const generateButton = document.getElementById("generate-btn");
