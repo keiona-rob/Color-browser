@@ -34,7 +34,8 @@ generateButton.addEventListener("click", async function showColors(){
     render(data);
 });
 
-// generateButton.addEventListener("click", function() {
+// const label = document.getElementById("list-label");
+const favoriteButton = document.getElementById("favorite");
+favoriteButton.addEventListener
 
-//  ;
-// });
+// let favorites = []
