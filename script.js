@@ -34,8 +34,7 @@ generateButton.addEventListener("click", async function showColors(){
     render(data);
 });
 
-// red 
-// pink 
-// yellow
-// orange 
+// generateButton.addEventListener("click", function() {
 
+//  ;
+// });
