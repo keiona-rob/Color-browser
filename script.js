@@ -138,8 +138,8 @@ const favoriteButton5 = document.getElementById("favorite-button5");
 
 favoriteButton5.addEventListener("click", () => {
     favorites.push(colors[4]);
-    faveListElement.innerHTML += `<li>${colors[4].value}</li>`
-    
+    faveListElement.innerHTML += `<li>${colors[4].value}</li>`;
+    li.style.backgroundColor = data.hex.value
     console.log(favorites)
 } )
 
