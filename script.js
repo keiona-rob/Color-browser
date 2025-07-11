@@ -106,9 +106,42 @@ const favoriteButton1 = document.getElementById("favorite-button1");
 
 favoriteButton1.addEventListener("click", () => {
     favorites.push(colors[0]);
-    faveListElement.innerHTML = `<li>${colors[0].value}</li>`
+    faveListElement.innerHTML += `<li>${colors[0].value}</li>`
     console.log(favorites)
 } ) 
+
+const favoriteButton2 = document.getElementById("favorite-button2");
+
+favoriteButton2.addEventListener("click", () => {
+    favorites.push(colors[1]);
+    faveListElement.innerHTML += `<li>${colors[1].value}</li>`
+    console.log(favorites)
+} )
+
+const favoriteButton3 = document.getElementById("favorite-button3");
+
+favoriteButton3.addEventListener("click", () => {
+    favorites.push(colors[2]);
+    faveListElement.innerHTML += `<li>${colors[2].value}</li>`
+    console.log(favorites)
+} )
+
+const favoriteButton4 = document.getElementById("favorite-button4");
+
+favoriteButton4.addEventListener("click", () => {
+    favorites.push(colors[3]);
+    faveListElement.innerHTML += `<li>${colors[3].value}</li>`
+    console.log(favorites)
+} )
+
+const favoriteButton5 = document.getElementById("favorite-button5");
+
+favoriteButton5.addEventListener("click", () => {
+    favorites.push(colors[4]);
+    faveListElement.innerHTML += `<li>${colors[4].value}</li>`
+    
+    console.log(favorites)
+} )
 
 
 const faveListElement = document.getElementById("fave-list");
@@ -125,7 +158,7 @@ const faveListElement = document.getElementById("fave-list");
 //  );
 
 //  function saveFavorites() {
-  localStorage.setItem('favorites', JSON.stringify(favorites));
+//   localStorage.setItem('favorites', JSON.stringify(favorites));
 
 //   use inside favoriteButton1 function
 // }
