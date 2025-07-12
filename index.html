@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Random Color Generator</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
  <link href="style.css" rel="stylesheet" />
@@ -11,37 +11,39 @@
 <body class="bg-cyan-200">
     <header></header>
     <main class="">
-        <h1 class="text-4xl text-cyan-400 text-center m-2 border-4 border-l-8 border-r-8 border-b-fuchsia-600
+        <h1 class="rounded-xl text-3xl text- text-cyan-400 text-shadow-sm text-shadow-black text-center m-2 border-4 border-l-8 border-r-8 border-b-fuchsia-600
         border-t-green-400
         border-l-orange-400
         border-e-red-600
         bg-slate-200">Random Color Generator</h1>
     <div id="all-colors-div" class="grid grid-cols-5 m-1.5 gap-0">
- <div id="palette" class="w-18 h-100 center"><p id="hex-id" class="text-1xl font-bold text-center"></p>
+ <div id="palette" class="w-18 h-100 center rounded-2xl"><p id="hex-id" class="text-1xl font-semibold text-center text-shadow-md text-shadow-amber-50"></p>
 </div>
-<div id="palette2" class="w-18 h-100 center"><p id="hex-id2" class="text-1xl font-bold text-center"></p>
+<div id="palette2" class="w-18 h-100 center rounded-2xl"><p id="hex-id2" class="text-1xl font-semibold text-center text-shadow-md text-shadow-amber-50"></p>
 </div>
-<div id="palette3" class="w-18 h-100 center"><p id="hex-id3" class="text-1xl font-bold text-center"></p>
+<div id="palette3" class="w-18 h-100 center rounded-2xl"><p id="hex-id3" class="text-1xl font-semibold text-center text-shadow-md text-shadow-amber-50"></p>
 </div>
-<div id="palette4" class="w-18 h-100 center"><p id="hex-id4" class="text-1xl font-bold text-center"></p>
+<div id="palette4" class="w-18 h-100 center rounded-2xl"><p id="hex-id4" class="text-1xl font-semibold text-center text-shadow-md text-shadow-amber-50"></p>
 </div>
-<div id="palette5" class="w-18 h-100 center"><p id="hex-id5" class="text-1xl font-bold text-center"></p>
+<div id="palette5" class="w-18 h-100 center rounded-2xl"><p id="hex-id5" class="text-1xl font-semibold text-center text-shadow-md text-shadow-amber-50"></p>
 </div>
 
     </div>
-    <div id="buttons-div" class="grid grid-cols-5">
-<button id="favorite-button">❤️</button>
-<button id="favorite-button">❤️</button>
-<button id="favorite-button">❤️</button>
-<button id="favorite-button">❤️</button>
-<button id="favorite-button">❤️</button>
+    <div id="buttons-div" class="grid grid-cols-5 ">
+<button id="favorite-button1">❤️</button>
+<button id="favorite-button2">❤️</button>
+<button id="favorite-button3">❤️</button>
+<button id="favorite-button4">❤️</button>
+<button id="favorite-button5">❤️</button>
     </div>
        
 
 
 
+<div class="flex flex-col items-center mt-10">
+<button id="generate-btn" class="bg-amber-500 rounded-xl p-2 text-2xl font-semibold ">Generate</button>
+</div>
 
-<button id="generate-btn" class="bg-amber-500">Generate</button>
 <!-- <label for="create-list">Create List</label> -->
 <!-- <input type="text" id="create-list" name="create-list" placeholder="" > -->
 

@@ -1,5 +1,8 @@
+// let colors = [];
+
 const state = {
-    currentColor: ""
+    currentColor: "",
+    colors:[]
 };
 
 async function fetchColors(color) {
@@ -60,27 +63,46 @@ numValue5.innerHTML = data.hex.value;
 async function showColors(color){
     const data = await fetchColors()
     render(data)
+    state.colors.push(data.hex)
+    console.log(state.colors)
 };
 
 async function showColors2(color){
     const data = await fetchColors();
-    render2(data);
+    render2(data)
+    state.colors.push(data.hex);
 };
 
 async function showColors3(color){
     const data = await fetchColors();
-    render3(data);
+    render3(data)
+    state.colors.push(data.hex);
 };
 
 async function showColors4(color){
     const data = await fetchColors();
-    render4(data);
+    render4(data)
+    state.colors.push(data.hex);
 };
 
 async function showColors5(color){
     const data = await fetchColors();
-    render5(data);
+    render5(data)
+    state.colors.push(data.hex)
+    console.log(state.colors);
 };
+
+// for loop
+
+async function showAllColors(){
+    for(let i = 0; i < 5; i++){
+      const data = await fetchColors();
+       colors.push(data.hex) 
+    //    render(colors);
+    }
+}
+
+// generate button
 
 const generateButton = document.getElementById("generate-btn");
 
@@ -92,10 +114,50 @@ generateButton.addEventListener("click", async function showAll(){
     showColors5();
 });
 
-// let favorites = [];
-// const favoriteButton = document.getElementById("favorite-button");
+let favorites = [];
+const favoriteButton1 = document.getElementById("favorite-button1");
 
-// const faveListElement = document.createElement("ul");
+favoriteButton1.addEventListener("click", () => {
+    favorites.push(state.colors[0]);
+    faveListElement.innerHTML += `<li>${state.colors[0].value}</li>`
+    console.log(favorites)
+} ) 
+
+const favoriteButton2 = document.getElementById("favorite-button2");
+
+favoriteButton2.addEventListener("click", () => {
+    favorites.push(state.colors[1]);
+    faveListElement.innerHTML += `<li>${state.colors[1].value}</li>`
+    console.log(favorites)
+} )
+
+const favoriteButton3 = document.getElementById("favorite-button3");
+
+favoriteButton3.addEventListener("click", () => {
+    favorites.push(state.colors[2]);
+    faveListElement.innerHTML += `<li>${state.colors[2].value}</li>`
+    console.log(favorites)
+} )
+
+const favoriteButton4 = document.getElementById("favorite-button4");
+
+favoriteButton4.addEventListener("click", () => {
+    favorites.push(state.colors[3]);
+    faveListElement.innerHTML += `<li>${state.colors[3].value}</li>`
+    console.log(favorites)
+} )
+
+const favoriteButton5 = document.getElementById("favorite-button5");
+
+favoriteButton5.addEventListener("click", () => {
+    favorites.push(state.colors[4]);
+    faveListElement.innerHTML += `<li>${state.colors[4].value}</li>`;
+    li.style.backgroundColor = data.hex.value
+    console.log(favorites)
+} )
+
+
+const faveListElement = document.getElementById("fave-list");
 
 // favoriteButton.addEventListener("click", async function addToFavorites(){
 //     const currentColor = document.createElement("li");
@@ -108,9 +170,14 @@ generateButton.addEventListener("click", async function showAll(){
 // }
 //  );
 
-//  create state
+//  function saveFavorites() {
+//   localStorage.setItem('favorites', JSON.stringify(favorites));
+
+//   use inside favoriteButton1 function
+// }
+// trying to create state to determine current color
 
 
 
 
- 
+//  repl colors with state.colors
